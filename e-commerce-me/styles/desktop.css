@@ -1,0 +1,248 @@
+:root {    
+    --Orange: hsl(26, 100%, 55%);
+    --Pale-orange: hsl(25, 100%, 94%);
+    --Very-vark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+}
+
+@font-face {
+    font-family: myfont400;
+    src: url(../Fonts/KumbhSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: myfont700;
+    src: url(../Fonts/KumbhSans-Medium.ttf);
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        padding: 0 7rem;
+    }
+    header {
+        border-bottom: 1px solid black;
+        padding-bottom: 2rem;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 5rem;
+    }
+
+    main > article {
+        width: 38%;
+    }
+
+    .nav-bar {
+        display: block;
+        margin-left: -12%;
+    }
+
+    .nav-bar a {
+        margin-right: 1.5rem;
+        padding-bottom: 2.2rem;
+    }
+
+    .nav-bar a:hover {
+        border-bottom: 5px solid var(--Orange);
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    .icon-previous, .icon-next {
+        display: none;
+    }
+
+    .carting-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .counter {
+        width: 30%;
+        height: 3.5rem;
+    }
+
+    .add-btn {
+        width: 65%;
+        height: 100%;
+    }
+
+    .price-details {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .product-details > h1 {
+        width: 20ch;
+    }
+
+    .product-details > h1, .product-details > p {
+        margin-bottom: 3rem;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column {
+        width: 18%;
+    }
+
+    .image-cursor {
+        opacity: 1;
+    }
+
+    .image-cursor:hover {
+        opacity: .7;
+    }
+
+    .image-cursor.active {
+        border: 3px solid var(--Orange);
+        opacity: .6;
+    }
+
+    .column > img {
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .content-section {
+        margin-top: 7rem;
+    }
+    
+    .slides > img {
+        border-radius: 2rem;
+    }
+
+
+    #indicator {
+        position: absolute;
+        top: 1.3rem;
+        right: 13rem;
+        font-family: myfont400;
+        font-size: .7rem;
+        background-color: var(--Orange);
+        color: white;
+        padding: .1rem .5rem;
+        border-radius: 50%;
+    }
+
+    .cart{
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        width: 25vw;
+        height: 18rem;
+        top: 5rem;
+        left: 70%;
+        border-radius: 1rem;
+        font-size: 1.3rem;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
+        display: none;
+    }
+
+    .nav-bar > a {
+        font-weight: normal;
+    }
+
+    .nav-bar > a:hover {
+        font-weight: bold;
+    }
+
+    .avatar {
+        margin-left: 3rem;
+    }
+
+    .lightbox-container {
+        position: absolute;
+        display: none;
+        z-index: 2;
+    }
+
+    .lightbox-container.active {
+        display: block;
+    }
+
+    .lightbox img {
+        width: 35%;
+        display: block;
+        margin: auto;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .ro{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        margin: auto;
+    }
+
+    .col {
+        width: 20%;
+    }
+
+    .col img {
+        border-radius: .5rem;
+    }
+
+    .icon-close {
+        position: absolute;
+        top: -2rem;
+        right: 20rem;
+    }
+
+    .icon-close:hover {        
+        filter: sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1);
+    }
+    
+    .icon-nex, .icon-prev{
+        position: absolute;
+        top: 40%;
+        background: white;
+        padding: .9rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 10.0rem;
+    }
+
+    .icon-nex{
+        right: 19.0rem;        
+    }
+
+    .icon-prev {        
+        left: 19.0rem;
+    }
+
+    .lightbox {
+        display: none;
+    }
+
+    .image-cursor {
+        opacity: 1;
+    }
+
+    
+    .image-ccursor.active {
+        border: 3px solid var(--Orange);
+        opacity: .6;
+    }
+
+}

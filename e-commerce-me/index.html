@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="styles/mobile.css">
+    <link rel="stylesheet" type="text/css" href="styles/desktop.css">
+    <title>E-commerce Product Page</title>
+</head>
+<body>
+    <header>
+        <div class="overlay" id="overlay"></div>
+        
+        <div> 
+            <img src="images/icon-menu.svg" alt="icon-menu" class="icon-menu" id="icon-menu">
+            <img src="images/logo.svg" alt="logo" class="logo" id="logo">
+        </div>
+
+        <nav class="nav-bar" id="nav-bar">
+            <img src="images/icon-close.svg" class="close-menu" id="close-menu">
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div>            
+            <img src="images/icon-cart.svg" alt="icon-cart" class="icon-cart" id="icon-cart">
+            <span id="indicator">1</span>
+            <img src="images/image-avatar.png" alt="avatar" class="avatar" id="avatar">
+        </div>
+
+        <div class="cart" id="cart">
+            <h5>Cart</h5>
+            <hr>
+            <p class="empty" id="empty">Your cart is empty</p>
+            <div class="cart-details" id="cart-details">
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="product-slide-container">
+            <div class="slides">
+                <img src="./images/image-product-1.jpg" alt="product1" onclick="openModal()">
+            </div>
+
+            
+            <div class="slides">
+                <img src="./images/image-product-2.jpg" alt="product2" onclick="openModal()">
+            </div>
+
+            
+            <div class="slides">
+                <img src="./images/image-product-3.jpg" alt="product3" onclick="openModal()">
+            </div>
+
+            
+            <div class="slides">
+                <img src="./images/image-product-4.jpg" alt="product4" onclick="openModal()">
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="./images/image-product-1-thumbnail.jpg" class="image-cursor right" alt="product1" onclick="currentSlide(1)">
+                </div>
+                
+                <div class="column">
+                    <img src="./images/image-product-2-thumbnail.jpg" class="image-cursor right" alt="product2" onclick="currentSlide(2)">
+                </div>
+                
+                <div class="column">
+                    <img src="./images/image-product-3-thumbnail.jpg" class="image-cursor right" alt="product3" onclick="currentSlide(3)">
+                </div>
+                
+                <div class="column">
+                    <img src="./images/image-product-4-thumbnail.jpg" class="image-cursor" alt="product4" onclick="currentSlide(4)">
+                </div>
+            </div>
+
+            
+            <img src="./images/icon-previous.svg" class="icon-previous icons" onclick="plusSlides(-1)">
+            <img src="./images/icon-next.svg" class="icon-next icons" onclick="plusSlides(1)">
+        </article>
+
+
+        <article class="content-section">            
+            <div class="product-details">
+                <h5>Sneaker Company</h5>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            </div>
+
+            <div class="price-details">
+                <div class="price">
+                    <h1>$125.00</h1>
+                    <p>50%</p>
+                </div>
+                <p>$250.00</p>
+            </div>
+
+            <div class="carting-section">
+                <div class="counter">
+                    <img src="images/icon-minus.svg" class="icon-minus" id="icon-minus">
+                    <h5 id="counter-display">0</h5>
+                    <img src="images/icon-plus.svg" class="icon-plus" id="icon-plus">
+                </div>
+
+                <button class="add-btn" id="add-btn">
+                    <img src="images/icon-cart-2.svg">
+                    Add to cart
+                </button>
+            </div>
+        </article>
+
+
+        <div class="lightbox-container" id="lightbox-container">
+            <img src="images/icon-close.svg" class="icon-close" id="close-nodal" onclick="closeModal()">
+            <div class="lightbox">
+                <img src="images/image-product-1.jpg">
+            </div>
+
+            <div class="lightbox">
+                <img src="images/image-product-2.jpg">
+            </div>
+
+            <div class="lightbox">
+                <img src="images/image-product-3.jpg">
+            </div>
+
+            <div class="lightbox">
+                <img src="images/image-product-4.jpg"> 
+            </div>  
+            
+            
+            <div class="ro">
+                <div class="col">
+                    <img src="./images/image-product-1-thumbnail.jpg" class="image-ccursor " alt="product1" onclick="currenttSlide(1)">
+                </div>
+                
+                <div class="col">
+                    <img src="./images/image-product-2-thumbnail.jpg" class="image-ccursor" alt="product2" onclick="currenttSlide(2)">
+                </div>
+                
+                <div class="col">
+                    <img src="./images/image-product-3-thumbnail.jpg" class="image-ccursor" alt="product3" onclick="currenttSlide(3)">
+                </div>
+                
+                <div class="col">
+                    <img src="./images/image-product-4-thumbnail.jpg" class="image-ccursor" alt="product4" onclick="currenttSlide(4)">
+                </div>
+            </div>
+
+            <img src="./images/icon-previous.svg" class="icon-prev icons" onclick="plussSlides(-1)">
+            <img src="./images/icon-next.svg" class="icon-nex icons" onclick="plussSlides(1)">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
